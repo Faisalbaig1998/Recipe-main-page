@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0e7de;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-image {
+    margin-top: 20px;
+    width: 95%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h1 {
+    font-family: 'young serif';
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #3b3b3b;
+}
+
+.intro {
+    font-size: 1em;
+    color: #7b7b7b;
+    margin-bottom: 20px;
+}
+
+.section {
+    font-family: Outfit;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.section h2 {
+    font-family: 'young serif';
+    font-weight: 400;
+    color: hsl(14, 45%, 36%);
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #d17a22;
+    margin-bottom: 10px;
+}
+
+ul,
+ol {
+    margin-left: 20px;
+}
+
+ul li,
+ol li {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #3b3b3b;
+}
+
+strong {
+    color: #3b3b3b;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border-bottom: 1px solid rgb(135, 134, 134);
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+table td:first-child {
+    color: grey;
+    font-weight: 450;
+}
+
+table td:nth-child(2) {
+    font-weight: bold;
+    color: hsl(14, 45%, 36%);
+}
+
+.content>*:nth-child(3) {
+    background-color: hsl(330, 100%, 98%);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+hr {
+    width: 100%;
+    background-color: grey;
+}
+
+.bold-bullets li::marker {
+    font-weight: bold;
+    color: hsl(14, 45%, 36%);
+}
+
+.bold-bullets li {
+    padding-left: 20px;
+}
+
+.section p {
+    color: grey;
+}
+
+.section:first-of-type h2 {
+    font-family: outfit;
+    font-weight: 600;
+    color: hsl(332, 51%, 32%);
+}
+
+/* Media query for mobile styles */
+@media screen and (max-width: 375px) {
+    body {
+        font-family: 'Outfit', sans-serif;
+        color: hsl(332, 51%, 32%);
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 375px;
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        height: auto;
+    }
+
+    .main-image {
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid #ddd;
+        margin-top: 0;
+        border-radius: 0;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .intro {
+        font-size: 1rem;
+        line-height: 1.4;
+        margin-bottom: 15px;
+    }
+
+    .section {
+        margin-bottom: 20px;
+    }
+
+    .section h2 {
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+        font-weight: 600;
+        color: hsl(332, 51%, 32%);
+    }
+
+    .section ul,
+    .section ol {
+        padding-left: 20px;
+    }
+
+    .section ul li,
+    .section ol li {
+        margin-bottom: 10px;
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .bold-bullets li {
+        font-weight: 600;
+    }
+
+    hr {
+        border: none;
+        border-top: 1px solid #ddd;
+        margin: 20px 0;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+
+    table tr {
+        border-bottom: 1px solid #ddd;
+    }
+
+    table td {
+        padding: 8px 5px;
+        font-size: 1rem;
+    }
+
+    .section:nth-of-type(1) h2 {
+        font-family: 'Outfit', sans-serif;
+        font-weight: 600;
+        color: hsl(332, 51%, 32%);
+        background-color: hsl(330, 100%, 98%);
+        padding: 10px;
+        border-radius: 10px;
+    }
+}
